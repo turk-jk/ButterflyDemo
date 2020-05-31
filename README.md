@@ -57,3 +57,6 @@ Unit tests & UI tests are not provided in the project
 ```
 App was not developed to handle all Errors in good UX manner. App was developed with the assumption the user will have internet connection prior launching the app. 
 ```
+### Commits
+Duo slowness and a technical problem with the project in the machine that the the project was initially developed with, I had to transfer the files to another machine to continue the work. That's way you you would see one gaint commit at the beging. 
+
