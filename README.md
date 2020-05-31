@@ -39,7 +39,7 @@ iOS >13
 4- Run the project
 ```
 ## CoreData
-Add New Item to PO         | 
+Grap of CoreData entities and thier relationships | 
 :-------------------------:| 
 ![](https://github.com/turk-jk/ButterflyDemo/blob/master/images/IMG_1757.PNG)
 
