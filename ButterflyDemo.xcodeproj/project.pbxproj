@@ -3,29 +3,71 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48C9796D45CE4B7427066DA6 /* Pods_ButterflyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F5E7B80D31757B3BBCC862 /* Pods_ButterflyDemo.framework */; };
 		BA184DF32481FB2F00460947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184DF22481FB2F00460947 /* AppDelegate.swift */; };
 		BA184DF52481FB2F00460947 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184DF42481FB2F00460947 /* SceneDelegate.swift */; };
-		BA184DF72481FB2F00460947 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184DF62481FB2F00460947 /* ViewController.swift */; };
+		BA184DF72481FB2F00460947 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184DF62481FB2F00460947 /* mainViewController.swift */; };
 		BA184DFA2481FB2F00460947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA184DF82481FB2F00460947 /* Main.storyboard */; };
 		BA184DFD2481FB2F00460947 /* ButterflyDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA184DFB2481FB2F00460947 /* ButterflyDemo.xcdatamodeld */; };
 		BA184DFF2481FB3100460947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA184DFE2481FB3100460947 /* Assets.xcassets */; };
 		BA184E022481FB3100460947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA184E002481FB3100460947 /* LaunchScreen.storyboard */; };
+		BA184E0F2483432800460947 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E0E2483432800460947 /* CoreDataStack.swift */; };
+		BA184E17248349B700460947 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E16248349B700460947 /* APIService.swift */; };
+		BA184E2F24834DEB00460947 /* Cancellations+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E2A24834DEB00460947 /* Cancellations+CoreDataProperties.swift */; };
+		BA184E3024834DEB00460947 /* PurchaseOrder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E2B24834DEB00460947 /* PurchaseOrder+CoreDataClass.swift */; };
+		BA184E3124834DEB00460947 /* coreDataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E2C24834DEB00460947 /* coreDataExt.swift */; };
+		BA184E3224834DEB00460947 /* Cancellations+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E2D24834DEB00460947 /* Cancellations+CoreDataClass.swift */; };
+		BA184E3324834DEB00460947 /* PurchaseOrder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E2E24834DEB00460947 /* PurchaseOrder+CoreDataProperties.swift */; };
+		BA184E3624835BCF00460947 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E3424835BCF00460947 /* Item+CoreDataClass.swift */; };
+		BA184E3724835BCF00460947 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E3524835BCF00460947 /* Item+CoreDataProperties.swift */; };
+		BA184E3C24835D7E00460947 /* Receipt+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E3824835D7E00460947 /* Receipt+CoreDataClass.swift */; };
+		BA184E3D24835D7E00460947 /* Receipt+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E3924835D7E00460947 /* Receipt+CoreDataProperties.swift */; };
+		BA184E3E24835D7E00460947 /* Invoice+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E3A24835D7E00460947 /* Invoice+CoreDataClass.swift */; };
+		BA184E3F24835D7E00460947 /* Invoice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E3B24835D7E00460947 /* Invoice+CoreDataProperties.swift */; };
+		BA184E412483669700460947 /* PurchaseOrderStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E402483669700460947 /* PurchaseOrderStruct.swift */; };
+		BA184E442483873000460947 /* NSFetchedRCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E432483873000460947 /* NSFetchedRCHelper.swift */; };
+		BA184E46248392A300460947 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E45248392A300460947 /* extensions.swift */; };
+		BA184E482483948900460947 /* detailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E472483948900460947 /* detailedView.swift */; };
+		BA184E4A2483AAB900460947 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = BA184E492483AAB900460947 /* PodFile */; };
+		BA184E4E2483AC2200460947 /* addPOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA184E4D2483AC2200460947 /* addPOViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7F5E7B80D31757B3BBCC862 /* Pods_ButterflyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ButterflyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA184DEF2481FB2F00460947 /* ButterflyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButterflyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA184DF22481FB2F00460947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA184DF42481FB2F00460947 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA184DF62481FB2F00460947 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA184DF62481FB2F00460947 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		BA184DF92481FB2F00460947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA184DFC2481FB2F00460947 /* ButterflyDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ButterflyDemo.xcdatamodel; sourceTree = "<group>"; };
 		BA184DFE2481FB3100460947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA184E012481FB3100460947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA184E032481FB3100460947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA184E0E2483432800460947 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		BA184E16248349B700460947 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		BA184E2A24834DEB00460947 /* Cancellations+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cancellations+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA184E2B24834DEB00460947 /* PurchaseOrder+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PurchaseOrder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA184E2C24834DEB00460947 /* coreDataExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = coreDataExt.swift; sourceTree = "<group>"; };
+		BA184E2D24834DEB00460947 /* Cancellations+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cancellations+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA184E2E24834DEB00460947 /* PurchaseOrder+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PurchaseOrder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA184E3424835BCF00460947 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA184E3524835BCF00460947 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA184E3824835D7E00460947 /* Receipt+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Receipt+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA184E3924835D7E00460947 /* Receipt+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Receipt+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA184E3A24835D7E00460947 /* Invoice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Invoice+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BA184E3B24835D7E00460947 /* Invoice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Invoice+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BA184E402483669700460947 /* PurchaseOrderStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOrderStruct.swift; sourceTree = "<group>"; };
+		BA184E432483873000460947 /* NSFetchedRCHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSFetchedRCHelper.swift; sourceTree = "<group>"; };
+		BA184E45248392A300460947 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		BA184E472483948900460947 /* detailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailedView.swift; sourceTree = "<group>"; };
+		BA184E492483AAB900460947 /* PodFile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = PodFile; sourceTree = "<group>"; };
+		BA184E4D2483AC2200460947 /* addPOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPOViewController.swift; sourceTree = "<group>"; };
+		DC3688D1F64546F958D1349F /* Pods-ButterflyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyDemo.debug.xcconfig"; path = "Target Support Files/Pods-ButterflyDemo/Pods-ButterflyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E7EB63F7E2004D6678357416 /* Pods-ButterflyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyDemo.release.xcconfig"; path = "Target Support Files/Pods-ButterflyDemo/Pods-ButterflyDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +75,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C9796D45CE4B7427066DA6 /* Pods_ButterflyDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		023C1A65B1180320D13F77EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC3688D1F64546F958D1349F /* Pods-ButterflyDemo.debug.xcconfig */,
+				E7EB63F7E2004D6678357416 /* Pods-ButterflyDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BA184DE62481FB2F00460947 = {
 			isa = PBXGroup;
 			children = (
+				BA184E492483AAB900460947 /* PodFile */,
 				BA184DF12481FB2F00460947 /* ButterflyDemo */,
 				BA184DF02481FB2F00460947 /* Products */,
+				023C1A65B1180320D13F77EB /* Pods */,
+				E97A2B8F6F3A413C2C5BCA3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +113,66 @@
 		BA184DF12481FB2F00460947 /* ButterflyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BA184E4C2483AB7900460947 /* Views */,
+				BA184E42248386FF00460947 /* Helpers */,
+				BA184E0924833F7B00460947 /* CoreData */,
 				BA184DF22481FB2F00460947 /* AppDelegate.swift */,
 				BA184DF42481FB2F00460947 /* SceneDelegate.swift */,
-				BA184DF62481FB2F00460947 /* ViewController.swift */,
 				BA184DF82481FB2F00460947 /* Main.storyboard */,
 				BA184DFE2481FB3100460947 /* Assets.xcassets */,
 				BA184E002481FB3100460947 /* LaunchScreen.storyboard */,
 				BA184E032481FB3100460947 /* Info.plist */,
 				BA184DFB2481FB2F00460947 /* ButterflyDemo.xcdatamodeld */,
+				BA184E0E2483432800460947 /* CoreDataStack.swift */,
+				BA184E16248349B700460947 /* APIService.swift */,
 			);
 			path = ButterflyDemo;
+			sourceTree = "<group>";
+		};
+		BA184E0924833F7B00460947 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BA184E3824835D7E00460947 /* Receipt+CoreDataClass.swift */,
+				BA184E3924835D7E00460947 /* Receipt+CoreDataProperties.swift */,
+				BA184E3A24835D7E00460947 /* Invoice+CoreDataClass.swift */,
+				BA184E3B24835D7E00460947 /* Invoice+CoreDataProperties.swift */,
+				BA184E3424835BCF00460947 /* Item+CoreDataClass.swift */,
+				BA184E3524835BCF00460947 /* Item+CoreDataProperties.swift */,
+				BA184E2D24834DEB00460947 /* Cancellations+CoreDataClass.swift */,
+				BA184E2A24834DEB00460947 /* Cancellations+CoreDataProperties.swift */,
+				BA184E2C24834DEB00460947 /* coreDataExt.swift */,
+				BA184E2B24834DEB00460947 /* PurchaseOrder+CoreDataClass.swift */,
+				BA184E2E24834DEB00460947 /* PurchaseOrder+CoreDataProperties.swift */,
+				BA184E402483669700460947 /* PurchaseOrderStruct.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		BA184E42248386FF00460947 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA184E432483873000460947 /* NSFetchedRCHelper.swift */,
+				BA184E45248392A300460947 /* extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BA184E4C2483AB7900460947 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA184DF62481FB2F00460947 /* mainViewController.swift */,
+				BA184E472483948900460947 /* detailedView.swift */,
+				BA184E4D2483AC2200460947 /* addPOViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E97A2B8F6F3A413C2C5BCA3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7F5E7B80D31757B3BBCC862 /* Pods_ButterflyDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA184E062481FB3100460947 /* Build configuration list for PBXNativeTarget "ButterflyDemo" */;
 			buildPhases = (
+				67163FEE88C6FA69E537770E /* [CP] Check Pods Manifest.lock */,
 				BA184DEB2481FB2F00460947 /* Sources */,
 				BA184DEC2481FB2F00460947 /* Frameworks */,
 				BA184DED2481FB2F00460947 /* Resources */,
+				145997166179FFBF2C93C771 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -98,7 +205,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
-				ORGANIZATIONNAME = "The Litt App";
+				ORGANIZATIONNAME = "Yacob Kazal";
 				TargetAttributes = {
 					BA184DEE2481FB2F00460947 = {
 						CreatedOnToolsVersion = 11.5;
@@ -106,7 +213,7 @@
 				};
 			};
 			buildConfigurationList = BA184DEA2481FB2F00460947 /* Build configuration list for PBXProject "ButterflyDemo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -130,21 +237,82 @@
 			files = (
 				BA184E022481FB3100460947 /* LaunchScreen.storyboard in Resources */,
 				BA184DFF2481FB3100460947 /* Assets.xcassets in Resources */,
+				BA184E4A2483AAB900460947 /* PodFile in Resources */,
 				BA184DFA2481FB2F00460947 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		145997166179FFBF2C93C771 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterflyDemo/Pods-ButterflyDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ButterflyDemo/Pods-ButterflyDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ButterflyDemo/Pods-ButterflyDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67163FEE88C6FA69E537770E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ButterflyDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA184DEB2481FB2F00460947 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA184E0F2483432800460947 /* CoreDataStack.swift in Sources */,
+				BA184E442483873000460947 /* NSFetchedRCHelper.swift in Sources */,
 				BA184DFD2481FB2F00460947 /* ButterflyDemo.xcdatamodeld in Sources */,
-				BA184DF72481FB2F00460947 /* ViewController.swift in Sources */,
+				BA184E3C24835D7E00460947 /* Receipt+CoreDataClass.swift in Sources */,
+				BA184E3124834DEB00460947 /* coreDataExt.swift in Sources */,
+				BA184E2F24834DEB00460947 /* Cancellations+CoreDataProperties.swift in Sources */,
+				BA184E3D24835D7E00460947 /* Receipt+CoreDataProperties.swift in Sources */,
+				BA184E17248349B700460947 /* APIService.swift in Sources */,
+				BA184E3E24835D7E00460947 /* Invoice+CoreDataClass.swift in Sources */,
+				BA184E4E2483AC2200460947 /* addPOViewController.swift in Sources */,
+				BA184E3724835BCF00460947 /* Item+CoreDataProperties.swift in Sources */,
+				BA184DF72481FB2F00460947 /* mainViewController.swift in Sources */,
+				BA184E3624835BCF00460947 /* Item+CoreDataClass.swift in Sources */,
+				BA184E3324834DEB00460947 /* PurchaseOrder+CoreDataProperties.swift in Sources */,
+				BA184E482483948900460947 /* detailedView.swift in Sources */,
+				BA184E412483669700460947 /* PurchaseOrderStruct.swift in Sources */,
+				BA184E3024834DEB00460947 /* PurchaseOrder+CoreDataClass.swift in Sources */,
+				BA184E46248392A300460947 /* extensions.swift in Sources */,
 				BA184DF32481FB2F00460947 /* AppDelegate.swift in Sources */,
+				BA184E3224834DEB00460947 /* Cancellations+CoreDataClass.swift in Sources */,
 				BA184DF52481FB2F00460947 /* SceneDelegate.swift in Sources */,
+				BA184E3F24835D7E00460947 /* Invoice+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,16 +454,18 @@
 		};
 		BA184E072481FB3100460947 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC3688D1F64546F958D1349F /* Pods-ButterflyDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F92VCP2C4S;
+				DEVELOPMENT_TEAM = 7GYSCUXZE5;
 				INFOPLIST_FILE = ButterflyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thelittapp.ButterflyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yacob.ButterflyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,16 +474,18 @@
 		};
 		BA184E082481FB3100460947 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7EB63F7E2004D6678357416 /* Pods-ButterflyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F92VCP2C4S;
+				DEVELOPMENT_TEAM = 7GYSCUXZE5;
 				INFOPLIST_FILE = ButterflyDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thelittapp.ButterflyDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yacob.ButterflyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

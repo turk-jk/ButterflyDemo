@@ -1,4 +1,77 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cancellation" representedClassName=".Cancellations" syncable="YES">
+        <attribute name="created" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="last_updated_user_entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ordered_quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="product_item_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="transient_identifier" optional="YES" attributeType="String"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PurchaseOrder" inverseName="cancellations" inverseEntity="PurchaseOrder"/>
+    </entity>
+    <entity name="Invoice" representedClassName=".Invoice" syncable="YES">
+        <attribute name="active_flag" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="created" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="invoice_number" optional="YES" attributeType="String"/>
+        <attribute name="last_updated" optional="YES" attributeType="String"/>
+        <attribute name="receipt_sent_date" optional="YES" attributeType="String"/>
+        <attribute name="received_status" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="transient_identifier" optional="YES" attributeType="String"/>
+        <relationship name="purchaseOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PurchaseOrder" inverseName="invoices" inverseEntity="PurchaseOrder"/>
+        <relationship name="receipts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Receipt" inverseName="invoice" inverseEntity="Receipt"/>
+    </entity>
+    <entity name="Item" representedClassName=".Item" syncable="YES">
+        <attribute name="active_flag" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="last_updated" optional="YES" attributeType="String"/>
+        <attribute name="last_updated_user_entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="product_item_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="transient_identifier" optional="YES" attributeType="String"/>
+        <relationship name="purchaseOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PurchaseOrder" inverseName="items" inverseEntity="PurchaseOrder"/>
+    </entity>
+    <entity name="PurchaseOrder" representedClassName=".PurchaseOrder" syncable="YES">
+        <attribute name="active_flag" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="approval_status" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="delivery_note" optional="YES" attributeType="String"/>
+        <attribute name="device_key" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="issue_date" optional="YES" attributeType="String"/>
+        <attribute name="last_updated" optional="YES" attributeType="String"/>
+        <attribute name="last_updated_user_entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preferred_delivery_date" optional="YES" attributeType="String"/>
+        <attribute name="purchase_order_number" optional="YES" attributeType="String"/>
+        <attribute name="sent_date" optional="YES" attributeType="String"/>
+        <attribute name="server_timestamp" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="supplier_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="cancellations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cancellation" inverseName="relationship" inverseEntity="Cancellation"/>
+        <relationship name="invoices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Invoice" inverseName="purchaseOrder" inverseEntity="Invoice"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="purchaseOrder" inverseEntity="Item"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Receipt" representedClassName=".Receipt" syncable="YES">
+        <attribute name="active_flag" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="created" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="last_updated" optional="YES" attributeType="String"/>
+        <attribute name="last_updated_user_entity_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="product_item_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="received_quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sent_date" optional="YES" attributeType="String"/>
+        <attribute name="transient_identifier" optional="YES" attributeType="String"/>
+        <relationship name="invoice" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Invoice" inverseName="receipts" inverseEntity="Invoice"/>
+    </entity>
+    <elements>
+        <element name="Cancellation" positionX="42.10546875" positionY="4.76171875" width="128" height="148"/>
+        <element name="Invoice" positionX="60.5546875" positionY="187.703125" width="128" height="193"/>
+        <element name="Item" positionX="-196.69921875" positionY="287.47265625" width="128" height="163"/>
+        <element name="PurchaseOrder" positionX="-287.21484375" positionY="-114.8203125" width="128" height="298"/>
+        <element name="Receipt" positionX="263.40625" positionY="187.55859375" width="128" height="193"/>
+    </elements>
 </model>

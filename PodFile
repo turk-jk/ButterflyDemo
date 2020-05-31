@@ -1,0 +1,9 @@
+platform :ios, '11.0'
+
+target 'ButterflyDemo' do
+  use_frameworks!
+  
+  # Pods for SWhatJealous
+  pod 'Eureka'
+end
+ 
